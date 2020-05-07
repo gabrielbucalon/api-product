@@ -25,7 +25,7 @@ public class Produto implements Serializable{
     private String nome;
 
     @NotNull
-    private BigDecimal quantidade;
+    private long quantidade;
 
     @NotNull
     private BigDecimal valor;
@@ -43,10 +43,10 @@ public class Produto implements Serializable{
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public BigDecimal getQuantidade() {
+    public long getQuantidade() {
         return quantidade;
     }
-    public void setQuantidade(BigDecimal quantidade) {
+    public void setQuantidade(long quantidade) {
         this.quantidade = quantidade;
     }
     public BigDecimal getValor() {
@@ -55,7 +55,5 @@ public class Produto implements Serializable{
     public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
-
-
 
 }
